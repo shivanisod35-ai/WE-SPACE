@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WE SPACE — An immersive digital odyssey through the cosmos. Explore black holes, dark matter, exoplanets, and the mysteries beyond.">
+  <title>WE SPACE — Beyond What We See</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌌</text></svg>">
+</head>
+
+<body>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Nav Trigger Zone -->
+  <div class="nav-trigger" id="navTrigger"></div>
+
+  <!-- NAVIGATION -->
+  <nav class="ghost-nav" id="ghostNav">
+    <a href="#" class="nav-logo">WE SPACE</a>
+    <ul class="nav-links">
+      <li><a href="#hero" class="nav-link active" data-section="hero">Orbit</a></li>
+      <li><a href="#knowledge" class="nav-link" data-section="knowledge">Nebula</a></li>
+      <li><a href="#disclosure" class="nav-link" data-section="disclosure">Eclipse</a></li>
+      <li><a href="#grid" class="nav-link" data-section="grid">Cosmos</a></li>
+      <li><a href="#docs" class="nav-link" data-section="docs">Voyager</a></li>
+      <li><a href="#nasafeed" class="nav-link" data-section="nasafeed">Mission</a></li>
+      <li><a href="#slider" class="nav-link" data-section="slider">Horizon</a></li>
+      <li><a href="#apod" class="nav-link" data-section="apod">Pulsar</a></li>
+    </ul>
+  </nav>
+
+  <!-- ═══════════════════════════════════════
+       HERO — The Descent
+       ═══════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-canvas-wrap">
+      <canvas class="hero-canvas" id="heroCanvas"></canvas>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title" id="heroTitle"></h1>
+        <p class="hero-subtitle">What exists beyond what we see?</p>
+        <p class="hero-tagline">A journey through silence, scale, and the infinite unknown</p>
+      </div>
+      <div class="scroll-hint">
+        <span>Scroll to descend</span>
+        <div class="scroll-hint-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <span>DEEP SPACE</span><span class="sep">✦</span>
+      <span>DARK MATTER</span><span class="sep">✦</span>
+      <span>EVENT HORIZON</span><span class="sep">✦</span>
+      <span>SINGULARITY</span><span class="sep">✦</span>
+      <span>EXOPLANETS</span><span class="sep">✦</span>
+      <span>NEBULAE</span><span class="sep">✦</span>
+      <span>QUANTUM FIELD</span><span class="sep">✦</span>
+      <span>WORMHOLES</span><span class="sep">✦</span>
+      <span>COSMIC VOID</span><span class="sep">✦</span>
+      <span>LIGHT YEARS</span><span class="sep">✦</span>
+      <span>DEEP SPACE</span><span class="sep">✦</span>
+      <span>DARK MATTER</span><span class="sep">✦</span>
+      <span>EVENT HORIZON</span><span class="sep">✦</span>
+      <span>SINGULARITY</span><span class="sep">✦</span>
+      <span>EXOPLANETS</span><span class="sep">✦</span>
+      <span>NEBULAE</span><span class="sep">✦</span>
+      <span>QUANTUM FIELD</span><span class="sep">✦</span>
+      <span>WORMHOLES</span><span class="sep">✦</span>
+      <span>COSMIC VOID</span><span class="sep">✦</span>
+      <span>LIGHT YEARS</span><span class="sep">✦</span>
+    </div>
+  </div>
+
+  <!-- TEXT INTERLUDE 1 -->
+  <div class="interlude blur-up">
+    <p class="interlude-eyebrow">The Scale of Everything</p>
+    <p class="interlude-text">
+      The observable universe spans <strong>93 billion light-years</strong> across.
+      Within it, <strong>two trillion galaxies</strong> drift through an expanding void —
+      each one home to hundreds of billions of stars, most with their own planets.
+      We are an impossibly small speck reflecting on impossibly large questions.
+    </p>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       UNIVERSE STRIP — Replaces empty void
+       ═══════════════════════════════════════ -->
+  <section class="universe-strip" id="strip">
+    <!-- Full-width NASA image banner -->
+    <div class="strip-banner blur-up">
+      <img
+        src="https://stsci-opo.org/STScI-01EVT3P6HH9FBZRDC89NXEFY2H.png"
+        alt="Pillars of Creation — Hubble Space Telescope"
+        class="strip-banner-img"
+        loading="lazy"
+        onerror="this.src='https://science.nasa.gov/wp-content/uploads/2023/04/pillars_of_creation_composite_final-5mb.jpg'">
+      <div class="strip-banner-overlay"></div>
+      <div class="strip-banner-text">
+        <span class="strip-tag">HUBBLE SPACE TELESCOPE · 1995 / 2014</span>
+        <h2 class="strip-banner-title">Pillars of Creation</h2>
+        <p class="strip-banner-sub">Towering columns of gas and dust inside the Eagle Nebula — stellar nurseries where new suns are born from collapsing molecular clouds, 6,500 light-years from Earth.</p>
+      </div>
+    </div>
+
+    <!-- 3-column fact strip -->
+    <div class="strip-facts">
+      <div class="strip-fact blur-up">
+        <img src="https://science.nasa.gov/wp-content/uploads/2023/09/milky-way-nasa.jpg"
+             alt="Milky Way" class="strip-fact-img" loading="lazy"
+             onerror="this.src='https://imagine.gsfc.nasa.gov/Images/science/milky_way_band.jpg'">
+        <div class="strip-fact-body">
+          <span class="strip-fact-tag">OUR GALAXY</span>
+          <h3 class="strip-fact-title">The Milky Way</h3>
+          <p class="strip-fact-text">A barred spiral galaxy 100,000 light-years across, home to 200–400 billion stars. Our solar system orbits the galactic center at 828,000 km/h — completing one revolution every 225 million years.</p>
+        </div>
+      </div>
+      <div class="strip-fact blur-up" style="transition-delay:0.15s">
+        <img src="https://stsci-opo.org/STScI-01EVVBMDMR0DYKZG0RJG6P8EHN.png"
+             alt="Hubble Ultra Deep Field" class="strip-fact-img" loading="lazy"
+             onerror="this.src='https://esahubble.org/media/archives/images/screen/heic0406a.jpg'">
+        <div class="strip-fact-body">
+          <span class="strip-fact-tag">HUBBLE ULTRA DEEP FIELD · 2004</span>
+          <h3 class="strip-fact-title">10,000 Galaxies in One Frame</h3>
+          <p class="strip-fact-text">A single exposure of a tiny, seemingly empty patch of sky revealed 10,000 galaxies — some dating back to just 800 million years after the Big Bang. The universe is not empty. It is filled beyond imagination.</p>
+        </div>
+      </div>
+      <div class="strip-fact blur-up" style="transition-delay:0.3s">
+        <img src="https://esahubble.org/media/archives/images/screen/heic0814a.jpg"
+             alt="Crab Nebula" class="strip-fact-img" loading="lazy"
+             onerror="this.src='https://science.nasa.gov/wp-content/uploads/2023/05/crab-nebula.jpg'">
+        <div class="strip-fact-body">
+          <span class="strip-fact-tag">STELLAR REMNANT</span>
+          <h3 class="strip-fact-title">The Crab Nebula</h3>
+          <p class="strip-fact-text">The debris cloud of a supernova explosion observed by Chinese astronomers in 1054 AD. At its heart pulses a neutron star — a city-sized sphere of collapsed matter spinning 30 times every second.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="spacer--sm"></div>
+
+  <!-- ═══════════════════════════════════════
+       KNOWLEDGE — Split Cards
+       ═══════════════════════════════════════ -->
+  <section class="knowledge-section" id="knowledge">
+    <h2 class="knowledge-heading blur-up">The Cosmic Codex</h2>
+    <p class="knowledge-sub blur-up">Four forces that shape everything we know — and everything we don't.</p>
+
+    <div class="knowledge-grid">
+      <div class="knowledge-card knowledge-card--dark">
+        <span class="kc-icon">◉</span>
+        <span class="kc-number" data-target="4000000" data-suffix=" M☉">0</span>
+        <span class="kc-label">Black Holes — Sagittarius A*</span>
+        <span class="kc-desc">The supermassive black hole anchoring our galaxy's core. Four million times the mass of our Sun, its gravitational pull warps spacetime so severely that even light cannot escape once it crosses the event horizon.</span>
+      </div>
+
+      <div class="knowledge-card knowledge-card--light">
+        <span class="kc-icon">◇</span>
+        <span class="kc-number" data-target="27" data-suffix="%">0</span>
+        <span class="kc-label">Dark Matter</span>
+        <span class="kc-desc">An invisible scaffolding that binds galaxies together. Undetectable by any instrument yet devised, it exerts gravitational force on everything around it — comprising 27% of the universe's total mass-energy content.</span>
+      </div>
+
+      <div class="knowledge-card knowledge-card--accent">
+        <span class="kc-icon">✧</span>
+        <span class="kc-number" data-target="5500" data-suffix="+">0</span>
+        <span class="kc-label">Confirmed Exoplanets</span>
+        <span class="kc-desc">Worlds orbiting distant suns, many within habitable zones where liquid water could pool on rocky surfaces. Each discovery expands the frontier of where complex chemistry — and perhaps life — might take root.</span>
+      </div>
+
+      <div class="knowledge-card knowledge-card--dark">
+        <span class="kc-icon">∞</span>
+        <span class="kc-number">13.8B</span>
+        <span class="kc-label">Years — The Age of Time Itself</span>
+        <span class="kc-desc">The Big Bang ignited 13.8 billion years ago, forging hydrogen and helium in minutes. Every heavy element in your body was later synthesized inside a dying star and scattered across the cosmos by its final explosion.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEXT INTERLUDE 2 -->
+  <div class="interlude blur-up">
+    <p class="interlude-eyebrow">Into the Dark</p>
+    <p class="interlude-text">
+      <strong>Dark energy</strong> is accelerating the universe's expansion —
+      a repulsive force embedded in the fabric of space itself, growing stronger
+      as the cosmos stretches. In 100 billion years, every galaxy beyond our local group
+      will have vanished beyond the <strong>cosmic horizon</strong>, forever unreachable.
+    </p>
+  </div>
+
+  <div class="spacer--md"></div>
+
+  <!-- ═══════════════════════════════════════
+       DISCLOSURE — Spotlight
+       ═══════════════════════════════════════ -->
+  <section class="disclosure-section" id="disclosure">
+    <div class="disclosure-content">
+      <p class="disclosure-text" id="disclosureText">
+        Light takes 8 minutes to reach us from the Sun. 4 years from the nearest star.
+        2.5 million years from Andromeda. The universe you see is not the universe that exists —
+        it is a fossil record. You are always looking into the past. The present is unknowable.
+      </p>
+      <div class="disclosure-mask" id="disclosureMask"></div>
+    </div>
+    <span class="disclosure-hint">Move your cursor to reveal the truth</span>
+  </section>
+
+  <div class="spacer--md"></div>
+
+  <!-- OUTLINE TEXT -->
+  <div class="outline-text blur-up" id="outlineText">UNIVERSE</div>
+
+  <div class="spacer--sm"></div>
+
+  <!-- ═══════════════════════════════════════
+       B&W CONFLICTING GRID
+       ═══════════════════════════════════════ -->
+  <section class="bw-grid-section" id="grid">
+    <p class="bw-grid-heading blur-up">The Archive — Fragments of Infinity</p>
+
+    <div class="bw-grid" id="bwGrid">
+      <div class="bw-cell bw-cell--white">
+        <span class="cell-number" data-target="2000000000000" data-suffix="">0</span>
+        <span class="cell-label">Galaxies in Observable Universe</span>
+        <span class="cell-desc">Two trillion galaxies drift through the expanding cosmic web, each a city of billions of stars.</span>
+      </div>
+
+      <div class="bw-cell bw-cell--black bw-cell--image bw-cell--tall">
+        <img src="Solar system.png" alt="Solar System" loading="lazy">
+      </div>
+
+      <div class="bw-cell bw-cell--black">
+        <span class="cell-number" data-target="95" data-suffix="%">0</span>
+        <span class="cell-label">Universe is Dark Energy & Matter</span>
+        <span class="cell-desc">Only 5% of the universe is made of ordinary matter. The rest is dark — invisible and unnamed.</span>
+      </div>
+
+      <div class="bw-cell bw-cell--black">
+        <span class="cell-number" data-target="13" data-suffix=".8B">0</span>
+        <span class="cell-label">Years Since the Big Bang</span>
+        <span class="cell-desc">Our universe ignited from a single point of infinite density, birthing space and time together.</span>
+      </div>
+
+      <div class="bw-cell bw-cell--white">
+        <span class="cell-number" data-target="5500" data-suffix="+">0</span>
+        <span class="cell-label">Confirmed Exoplanets</span>
+        <span class="cell-desc">Each one a world of potential — some orbit in habitable zones where liquid water could exist on the surface, raising profound questions about life's frequency in the cosmos.</span>
+      </div>
+
+      <div class="bw-cell bw-cell--white bw-cell--span-2">
+        <span class="cell-number" data-target="4" data-suffix=".6B">0</span>
+        <span class="cell-label">Age of Our Solar System (Years)</span>
+        <span class="cell-desc">A middle-aged star system in a quiet spiral arm of the Milky Way. We are cosmic latecomers — the universe had already lived two thirds of its current life before Earth condensed from a cloud of stellar debris.</span>
+      </div>
+
+      <div class="bw-cell bw-cell--black">
+        <span class="cell-number">∞</span>
+        <span class="cell-label">Questions Remaining</span>
+        <span class="cell-desc">Every answer opens ten new questions. The frontier of human knowledge has no edge.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEXT INTERLUDE 3 -->
+  <div class="interlude blur-up">
+    <p class="interlude-eyebrow">The Human Element</p>
+    <p class="interlude-text">
+      Since the dawn of consciousness, <strong>we have looked up</strong>.
+      From cave paintings of star patterns to the James Webb Deep Field —
+      our species is defined by the compulsion to understand what lies beyond the horizon.
+      Space exploration is not a luxury. It is <strong>who we are</strong>.
+    </p>
+  </div>
+
+  <div class="spacer--md"></div>
+
+  <!-- ═══════════════════════════════════════
+       SPACE DOCUMENTARIES
+       ═══════════════════════════════════════ -->
+  <section class="docs-section" id="docs">
+    <h2 class="docs-heading blur-up">Voyager Logs — Essential Viewing</h2>
+    <p class="docs-sub blur-up">Six films and series that reshaped humanity's understanding of the cosmos.</p>
+
+    <div class="docs-grid" id="docsGrid">
+      <div class="doc-card">
+        <div class="doc-card-image">
+          <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=600&auto=format&fit=crop"
+               alt="Cosmos: A Spacetime Odyssey" loading="lazy">
+        </div>
+        <div class="doc-card-info">
+          <p class="doc-card-year">2014 · Series · 13 Episodes</p>
+          <h3 class="doc-card-title">Cosmos: A Spacetime Odyssey</h3>
+          <p class="doc-card-desc">Neil deGrasse Tyson guides viewers through the vastness of space-time aboard the Ship of Imagination — from subatomic particles to the farthest reaches of the observable universe, weaving science with human stories.</p>
+        </div>
+      </div>
+
+      <div class="doc-card">
+        <div class="doc-card-image">
+          <img src="https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?q=80&w=600&auto=format&fit=crop"
+               alt="Black Holes: Edge of All We Know" loading="lazy">
+        </div>
+        <div class="doc-card-info">
+          <p class="doc-card-year">2021 · Film · 99 min</p>
+          <h3 class="doc-card-title">Black Holes: Edge of All We Know</h3>
+          <p class="doc-card-desc">Two global teams of scientists — one bearing Stephen Hawking's final theoretical work — race to capture the first photograph of a black hole. The resulting image shook the foundations of theoretical physics.</p>
+        </div>
+      </div>
+
+      <div class="doc-card">
+        <div class="doc-card-image">
+          <img src="https://images.unsplash.com/photo-1541873676-11815e5e0046?q=80&w=600&auto=format&fit=crop"
+               alt="Apollo 13: Survival" loading="lazy">
+        </div>
+        <div class="doc-card-info">
+          <p class="doc-card-year">2024 · Film · 100 min</p>
+          <h3 class="doc-card-title">Apollo 13: Survival</h3>
+          <p class="doc-card-desc">Newly declassified NASA footage reconstructs the catastrophic 1970 moon mission from the inside. Three astronauts, one exploded oxygen tank, and 87 hours of cold silence between them and death.</p>
+        </div>
+      </div>
+
+      <div class="doc-card">
+        <div class="doc-card-image">
+          <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=600&auto=format&fit=crop"
+               alt="Unknown: Cosmic Time Machine" loading="lazy">
+        </div>
+        <div class="doc-card-info">
+          <p class="doc-card-year">2023 · Film · 90 min</p>
+          <h3 class="doc-card-title">Unknown: Cosmic Time Machine</h3>
+          <p class="doc-card-desc">The inside story of the James Webb Space Telescope — humanity's most powerful observatory. Peering 13.4 billion years into the past, JWST is fundamentally rewriting our models of how galaxies form.</p>
+        </div>
+      </div>
+
+      <div class="doc-card">
+        <div class="doc-card-image">
+          <img src="https://images.unsplash.com/photo-1446776877081-d282a0f896e2?q=80&w=600&auto=format&fit=crop"
+               alt="One Strange Rock" loading="lazy">
+        </div>
+        <div class="doc-card-info">
+          <p class="doc-card-year">2018 · Series · 10 Episodes</p>
+          <h3 class="doc-card-title">One Strange Rock</h3>
+          <p class="doc-card-desc">Eight astronauts who have walked in orbit tell the story of Earth as seen from above — exploring the precise, fragile conditions that make our pale blue dot the only known harbor for life in the universe.</p>
+        </div>
+      </div>
+
+      <div class="doc-card">
+        <div class="doc-card-image">
+          <img src="https://images.unsplash.com/photo-1517976487492-5750f3195933?q=80&w=600&auto=format&fit=crop"
+               alt="Return to Space" loading="lazy">
+        </div>
+        <div class="doc-card-info">
+          <p class="doc-card-year">2022 · Film · 82 min</p>
+          <h3 class="doc-card-title">Return to Space</h3>
+          <p class="doc-card-desc">Following Elon Musk and SpaceX through years of failure and a pivotal 2020 launch that ended America's decade-long dependence on Russian rockets and heralded a new era of commercial human spaceflight.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="spacer--md"></div>
+
+  <!-- COUNTERS -->
+  <div class="counters-section blur-up" id="countersSection">
+    <div class="counter-item">
+      <div class="counter-value"><span data-target="93000000" class="counter-num">0</span><span class="counter-suffix"> mi</span></div>
+      <div class="counter-label">Distance to Sun</div>
+    </div>
+    <div class="counter-item">
+      <div class="counter-value"><span data-target="100000" class="counter-num">0</span><span class="counter-suffix"> ly</span></div>
+      <div class="counter-label">Milky Way Diameter</div>
+    </div>
+    <div class="counter-item">
+      <div class="counter-value"><span data-target="1000000000" class="counter-num">0</span><span class="counter-suffix">+</span></div>
+      <div class="counter-label">Stars in Andromeda</div>
+    </div>
+    <div class="counter-item">
+      <div class="counter-value"><span data-target="671" class="counter-num">0</span><span class="counter-suffix">M mph</span></div>
+      <div class="counter-label">Speed of Light</div>
+    </div>
+  </div>
+
+  <div class="spacer--md"></div>
+
+  <!-- ═══════════════════════════════════════
+       NASA LIVE FEED — Mars & Earth Section
+       ═══════════════════════════════════════ -->
+  <section class="nasafeed-section" id="nasafeed">
+    <h2 class="nasafeed-heading blur-up">Mission Control — Live NASA Data</h2>
+    <p class="nasafeed-sub blur-up">Real-time imagery and data pulled directly from NASA's open APIs.</p>
+
+    <div class="nasafeed-grid">
+      <!-- Mars Rover Photos -->
+      <div class="nasafeed-panel blur-up">
+        <div class="panel-header">
+          <span class="panel-tag">MARS SURFACE</span>
+          <h3 class="panel-title">Curiosity Rover — Latest Transmission</h3>
+          <p class="panel-desc">Raw imagery beamed from the surface of Mars by NASA's Curiosity rover, operating in Gale Crater since 2012.</p>
+        </div>
+        <div class="mars-photos-grid" id="marsPhotosGrid">
+          <div class="mars-loading">
+            <span>Receiving signal from Mars</span>
+            <span class="dot-pulse"><span></span><span></span><span></span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- NASA Image Library -->
+      <div class="nasafeed-panel blur-up">
+        <div class="panel-header">
+          <span class="panel-tag">NASA ARCHIVE</span>
+          <h3 class="panel-title">Deep Space Image Library</h3>
+          <p class="panel-desc">Curated selections from NASA's public image library — nebulae, galaxies, and cosmic phenomena captured by our most powerful telescopes.</p>
+        </div>
+        <div class="nasa-images-grid" id="nasaImagesGrid">
+          <div class="mars-loading">
+            <span>Loading cosmic archive</span>
+            <span class="dot-pulse"><span></span><span></span><span></span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Earth Polychromatic Imaging Camera (EPIC) -->
+    <div class="epic-section blur-up">
+      <div class="epic-text">
+        <span class="panel-tag">DSCOVR SATELLITE · L1 LAGRANGE POINT</span>
+        <h3 class="epic-title">Earth from 1 Million Miles Away</h3>
+        <p class="epic-desc">
+          NASA's EPIC camera aboard the DSCOVR satellite orbits the L1 Lagrange point between Earth and the Sun — 
+          a gravitational sweet spot that allows it to capture our entire sunlit planet in a single frame. 
+          From this vantage point, no borders are visible. Only ocean, cloud, and continent.
+        </p>
+        <div class="epic-stats">
+          <div class="epic-stat"><span class="epic-stat-num">1M</span><span class="epic-stat-label">Miles from Earth</span></div>
+          <div class="epic-stat"><span class="epic-stat-num">13</span><span class="epic-stat-label">Images per Day</span></div>
+          <div class="epic-stat"><span class="epic-stat-num">2015</span><span class="epic-stat-label">Launch Year</span></div>
+        </div>
+      </div>
+      <div class="epic-image-wrap">
+        <div class="epic-loading" id="epicLoading">
+          <span>Fetching Earth image</span>
+          <span class="dot-pulse"><span></span><span></span><span></span></span>
+        </div>
+        <img id="epicImage" src="" alt="Earth from DSCOVR EPIC" style="display:none;">
+        <p class="epic-caption" id="epicCaption"></p>
+      </div>
+    </div>
+  </section>
+
+  <div class="spacer--md"></div>
+
+  <!-- ═══════════════════════════════════════
+       SLIDER — Image Right, Text Left
+       ═══════════════════════════════════════ -->
+  <section class="slider-section" id="slider">
+    <div class="slider-layout">
+      <div class="slider-text-side blur-up blur-up--left">
+        <p class="slider-eyebrow">The Observation Deck</p>
+        <h2 class="slider-text-title">Where Astronauts Meet the Infinite</h2>
+        <div class="slider-text-body">
+          <p>
+            Since Yuri Gagarin's first orbit in 1961, over 600 humans have ventured beyond
+            Earth's atmosphere. Each one has described the experience as profoundly life-changing —
+            a phenomenon scientists call the <strong>"Overview Effect."</strong>
+          </p>
+          <p>
+            From the International Space Station, astronauts witness 16 sunrises every 24 hours,
+            orbiting at 28,000 km/h. They see no borders, no nations — only a fragile blue marble
+            suspended in an ocean of darkness.
+          </p>
+          <p>
+            Drag the slider to compare satellite observation data with deep-space telescope imagery —
+            two complementary windows into the universe that surrounds us.
+          </p>
+        </div>
+        <a href="#apod" class="ghost-btn">View Today's NASA Image →</a>
+      </div>
+
+      <div class="slider-image-side blur-up blur-up--right">
+        <div class="comparison-slider" id="comparisonSlider">
+          <img src="SLIDE IMAGE 1.png" alt="Satellite Data" class="slider-before">
+          <img src="SLIDE IMAGE 2.png" alt="Deep-Space Telescope" class="slider-after">
+          <div class="slider-divider" id="sliderDivider"></div>
+          <div class="slider-handle" id="sliderHandle">
+            <span class="slider-handle-arrows">◄ ►</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="spacer--md"></div>
+
+  <!-- ═══════════════════════════════════════
+       APOD
+       ═══════════════════════════════════════ -->
+  <section class="apod-section blur-up" id="apod">
+    <h2 class="apod-heading">Live Transmission — NASA Astronomy Picture of the Day</h2>
+    <p class="apod-sub">Every day, NASA publishes one image of our universe. This is today's.</p>
+    <div class="apod-card" id="apodCard">
+      <div class="apod-card-inner" id="apodCardInner">
+        <div class="apod-loading" id="apodLoading">
+          <span>Fetching from NASA</span>&nbsp;
+          <span class="dot-pulse"><span></span><span></span><span></span></span>
+        </div>
+        <div class="apod-image-wrap" id="apodImageWrap" style="display:none;">
+          <img id="apodImage" src="" alt="">
+        </div>
+        <div class="apod-info" id="apodInfo" style="display:none;">
+          <h3 class="apod-title" id="apodTitle"></h3>
+          <p class="apod-date" id="apodDate"></p>
+          <p class="apod-explanation" id="apodExplanation"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEXT INTERLUDE 4 -->
+  <div class="interlude blur-up">
+    <p class="interlude-eyebrow">Final Transmission</p>
+    <p class="interlude-text">
+      The universe is under no obligation to make sense to us.
+      And yet — <strong>we keep looking</strong>. Because the only thing more terrifying
+      than the unknown is the thought that we might stop asking questions.
+    </p>
+  </div>
+
+  <div class="spacer--sm"></div>
+
+  <!-- FOOTER -->
+  <footer class="gravity-footer" id="footer">
+    <div class="footer-massive-text">WE SPACE</div>
+    <p class="footer-sub">Is space empty... or watching?</p>
+    <div class="footer-social">
+      <a href="https://github.com/syedalisherkazmi" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+        <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+        </svg>
+        <span>@syedalisherkazmi</span>
+      </a>
+      <a href="https://linkedin.com/in/syedalisherkazmi" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+        <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+        </svg>
+        <span>@syedalisherkazmi</span>
+      </a>
+    </div>
+    <div class="footer-line"></div>
+    <p class="footer-copy">© 2026 WE SPACE — An Immersive Cosmic Odyssey · Built with NASA Open APIs</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
